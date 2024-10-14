@@ -45,7 +45,7 @@ To identify failed login attempts I used the fact that MySQL utilizes Boolean da
 
 The image below highlightes the operators used in green, Boolean data in pink, and the correlation between login time and failed login attempts in blue.
 
-<img src="" width="600" />
+<img src="https://github.com/melaniedaniel7/Apply-filters-to-SQL-queries/blob/f9e24f12755d646bf57b094d2d1e97a77d6cf6fc/Screenshot%202024-10-14%20at%2014.19.14.png" width="600" />
 
 ### Retrieve login attempts on specific dates
 A suspicious event occurred on 2022-05-09. To investigate this event, you want to review all login attempts which occurred on this day and the day before. 
