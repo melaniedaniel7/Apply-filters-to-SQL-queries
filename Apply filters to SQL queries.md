@@ -57,7 +57,7 @@ The equals `=` operator indicates that any data I am looking for in the database
 
 The image below highlights the operators used in green and the result of either condition being met for the dates specified for login attempts in blue.
 
-<img src="" width="600" />
+<img src="https://github.com/melaniedaniel7/Apply-filters-to-SQL-queries/blob/13093a11094c40e649ebcd9622f97f638a88bd52/Screenshot%202024-10-14%20at%2015.21.31.png" width="600" />
 
 ### Retrieve login attempts outside of Mexico
 There’s been suspicious activity with login attempts, but the team has determined that this activity didn't originate in Mexico. 
