@@ -14,16 +14,13 @@ Be sure to include the following in your completed activity:
 - Details on using AND and OR to filter on multiple conditions
 - Details on using NOT in filters
 
-Scenario:
-You are a security professional at a large organization. Part of your job is to investigate security issues to help keep the system secure. 
-You recently discovered some potential security issues that involve login attempts and employee machines.
-Your task is to examine the organization’s data in their employees and log_in_attempts tables. 
-You’ll need to use SQL filters to retrieve records from different datasets and investigate the potential security issues.
-
 ### Project description
-Describe what you accomplish through SQL.
-In the Project description section, give a general overview of the scenario and what you accomplish through SQL. Write two to four sentences.
 
+In this activity I acted as a security professional at a large organization. Part of my job was to investigate security issues to help keep the system secure. 
+In this scenario I recently discovered some potential security issues that involved login attempts and employee machines.
+My task was to examine the organization’s data in their employees and log_in_attempts tables. 
+I used SQL filters to retrieve records from different datasets and investigate the potential security issues.
+The steps I took to complete this task can be seen below.
 
 ### Retrieve after hours failed login attempts
 I recently discovered a potential security incident that occurred after business hours. 
@@ -48,12 +45,19 @@ The image below highlightes the operators used in green, Boolean data in pink, a
 <img src="https://github.com/melaniedaniel7/Apply-filters-to-SQL-queries/blob/f9e24f12755d646bf57b094d2d1e97a77d6cf6fc/Screenshot%202024-10-14%20at%2014.19.14.png" width="600" />
 
 ### Retrieve login attempts on specific dates
-A suspicious event occurred on 2022-05-09. To investigate this event, you want to review all login attempts which occurred on this day and the day before. 
-Use filters in SQL to create a query that identifies all login attempts that occurred on 2022-05-09 or 2022-05-08. 
-(The date of the login attempt is found in the login_date column.)
-Describe your query and how it works.
+A suspicious event occurred on 2022-05-09. To investigate this event, I reviewed all login attempts which occurred on this day and the day before. 
+I used the equals `=` operator and the `OR` operator in SQL to create a query that identifies all login attempts that occurred on 2022-05-09 or 2022-05-08.
 
+The image below shows how I used the `WHERE` filter to filter for the specific data I am looking for in the `log_in_attempts table`. 
+The date of the login attempt is found in the `login_date` column.
+The `OR` operator specifies that either condition can be met. I use this operator becuase I want data about login attempts that specifically occured on either `2022-05-08` or `2022-05-09`.
+The equals `=` operator indicates that any data I am looking for in the database must have that exact date reflected in the `login_date` column. The equals operator is exclusive, which means that it does not indlude the value of comparison.
 
+💡 When using the `OR` operator the column being specified for each condition must be repeted in full. This is shown in the image below in pink.
+
+The image below highlights the operators used in green and the result of either condition being met for the dates specified for login attempts in blue.
+
+<img src="" width="600" />
 
 ### Retrieve login attempts outside of Mexico
 There’s been suspicious activity with login attempts, but the team has determined that this activity didn't originate in Mexico. 
