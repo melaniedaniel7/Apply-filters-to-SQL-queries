@@ -46,6 +46,7 @@ The image below highlightes the operators used in green, Boolean data in pink, a
 
 ### Retrieve login attempts on specific dates
 A suspicious event occurred on 2022-05-09. To investigate this event, I reviewed all login attempts which occurred on this day and the day before. 
+
 I used the equals `=` operator and the `OR` operator in SQL to create a query that identifies all login attempts that occurred on 2022-05-09 or 2022-05-08.
 
 The image below shows how I used the `WHERE` filter to filter for the specific data I am looking for in the `log_in_attempts table`. 
@@ -60,18 +61,20 @@ The image below highlights the operators used in green and the result of either 
 <img src="https://github.com/melaniedaniel7/Apply-filters-to-SQL-queries/blob/13093a11094c40e649ebcd9622f97f638a88bd52/Screenshot%202024-10-14%20at%2015.21.31.png" width="600" />
 
 ### Retrieve login attempts outside of Mexico
-There’s been suspicious activity with login attempts, but the team has determined that this activity didn't originate in Mexico. 
-Now, you need to investigate login attempts that occurred outside of Mexico. 
-Use filters in SQL to create a query that identifies all login attempts that occurred outside of Mexico. 
+There was suspicious activity with login attempts, but the team determined that this activity did not originate in Mexico. 
+Here I needed to investigate login attempts that occurred outside of Mexico. 
+I used filters in SQL to create a query that identifies all login attempts that occurred outside of Mexico. 
+
 (When referring to Mexico, the country column contains values of both MEX and MEXICO, and you need to use the LIKE keyword with % to make sure your query reflects this.)
 Describe your query and how it works.
 
 
 
 ### Retrieve employees in Marketing
-Your team wants to perform security updates on specific employee machines in the Marketing department. 
-You’re responsible for getting information on these employee machines and will need to query the employees table. 
-Use filters in SQL to create a query that identifies all employees in the Marketing department for all offices in the East building.
+My team wanted to perform security updates on specific employee machines in the Marketing department. 
+I am responsible for getting information on these employee machines and I needed to query the employees table. 
+
+I used filters in SQL to create a query that identifies all employees in the Marketing department for all offices in the East building.
 (The department of the employee is found in the department column, which contains values that include Marketing. 
 The office is found in the office column. Some examples of values in this column are East-170, East-320, and North-434. 
 You’ll need to use the LIKE keyword with % to filter for the East building.)
@@ -80,17 +83,19 @@ Describe your query and how it works.
 
 
 ### Retrieve employees in Finance or Sales
-Your team now needs to perform a different security update on machines for employees in the Sales and Finance departments. 
-Use filters in SQL to create a query that identifies all employees in the Sales or Finance departments. 
+My team then needed to perform a different security update on machines for employees in the Sales and Finance departments.
+
+I used filters in SQL to create a query that identifies all employees in the Sales or Finance departments. 
 (The department of the employee is found in the department column, which contains values that include Sales and Finance.)
 Describe your query and how it works.
 
 
 
 ### Retrieve all employees not in IT
-Your team needs to make one more update to employee machines. 
-The employees who are in the Information Technology department already had this update, but employees in all other departments need it. 
-Use filters in SQL to create a query which identifies all employees not in the IT department. 
+My team needed to make one more update to employee machines. 
+The employees who are in the Information Technology department already had this update, but employees in all other departments need it.
+
+I use filters in SQL to create a query which identifies all employees not in the IT department. 
 (The department of the employee is found in the department column, which contains values that include Information Technology.)
 Describe your query and how it works.
 
