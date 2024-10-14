@@ -26,14 +26,26 @@ In the Project description section, give a general overview of the scenario and 
 
 
 ### Retrieve after hours failed login attempts
-You recently discovered a potential security incident that occurred after business hours. 
-To investigate this, you need to query the log_in_attempts table and review after hours login activity. 
-Use filters in SQL to create a query that identifies all failed login attempts that occurred after 18:00. 
-(The time of the login attempt is found in the login_time column. The success column contains a value of 0 
-when a login attempt failed; you can use either a value of 0 or FALSE in your query to identify failed login attempts.)
-Describe your query and how it works.
+I recently discovered a potential security incident that occurred after business hours. 
+To investigate this, I needed to query the `log_in_attempts` table and review after hours login activity. 
 
+I used the greater than operator `>`, the equals `=` operator and the `AND` operator in SQL to create a query that identified all failed login attempts that occurred after 18:00.
 
+In the image below I used the `SELECT *` query to select all columns in the database. 
+I then used the `FROM` query to filter data from the `log_in_attempts` table.
+Finally, I used the `WHERE` filter to identify failed login attempts recorded afterhours in the `login_time` column.
+
+To review the `login_time` column for afterhours only, the greater than `>` operator is used followed by the time `18:00`. The greater than operator specifies that I am only interested in data after the specified time period.
+
+The `AND` operator is used becuase I have two conditions that I want met simultaneously.
+
+To identify failed login attempts I used the fact that MySQL utilizes Boolean data. This means that the Boolean value `1` represents `TRUE` and the Boolean value `0` represents `FALSE`. These can be used interchangeably. In the image below I specified the condition of failed login attempts using `success = FALSE` followed by a semiclon `;` to signify the end of the query. The equals `=` operator indicates that the login attempt must be unsuccessful.
+
+💡 Boolean values are not placed in single quotes because they are not string data, they are Boolean data.
+
+The image below highlightes the operators used in green, Boolean data in pink, and the correlation between login time and failed login attempts in blue.
+
+<img src="" width="600" />
 
 ### Retrieve login attempts on specific dates
 A suspicious event occurred on 2022-05-09. To investigate this event, you want to review all login attempts which occurred on this day and the day before. 
