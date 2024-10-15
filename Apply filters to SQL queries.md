@@ -63,7 +63,7 @@ The image below highlights the operators used in green and the result of either 
 ### Retrieve login attempts outside of Mexico
 There was suspicious activity with login attempts, but the team determined that this activity did not originate in Mexico. 
 Here I needed to investigate login attempts that occurred outside of Mexico. 
-I used the `NOT` operator, the `%` wildcard filter, and the `LIKE` filter in SQL to create a query that identifies all login attempts that occurred outside of Mexico. 
+I used the `NOT` operator, and the `LIKE` filter paired with the `%` wildcard in SQL to create a query that identifies all login attempts that occurred outside of Mexico. 
 
 I used the `NOT` operator because the suspecious login activity happened in countries excluding Mexico. 
 
@@ -71,7 +71,7 @@ The `LIKE` filter is used to search for a pattern in a column. In this scenario 
 
 The `%` wildcard is used because Mexico can be referred to as both `MEX` and `MEXICO` in the country column. The `%` wildcard substitutes for any number of character. This ensures that our query will acurately filter for countries excluding Mexico, regardless of the two format opetions Mexico can be recorded as in the country column.
 
-The image below highlights the `NOT` operator in green, the `%` wildcard, and the `LIKE` filter in pink, and the results of countries where login attempts were made outside of Mexico in blue.
+The image below highlights the `NOT` operator in green, the `LIKE` filter  paired with the `%` wildcard in pink, and the results of countries where login attempts were made outside of Mexico in blue.
 
 <img src="https://github.com/melaniedaniel7/Apply-filters-to-SQL-queries/blob/1ab585636d4683dd378a997847713cee62150d7a/Screenshot%202024-10-15%20at%2010.28.41.png" width="600" />
 
@@ -79,13 +79,20 @@ The image below highlights the `NOT` operator in green, the `%` wildcard, and th
 My team wanted to perform security updates on specific employee machines in the Marketing department. 
 I am responsible for getting information on these employee machines and I needed to query the employees table. 
 
-I used filters in SQL to create a query that identifies all employees in the Marketing department for all offices in the East building.
-(The department of the employee is found in the department column, which contains values that include Marketing. 
-The office is found in the office column. Some examples of values in this column are East-170, East-320, and North-434. 
-You’ll need to use the LIKE keyword with % to filter for the East building.)
-Describe your query and how it works.
+I used the equals `=` operator, the `AND` operator, and the `LIKE` filter paired with the `%` wildcard in SQL to create a query that identifies all employees in the Marketing department for all offices in the East building.
 
+The department of the employee is found in the department column, which contains values that include Marketing. I used the equals `=` operator to specify that I only wanted data for this specific department. The equals operator is exclusive.
 
+The `AND` operator specifies that both conditions must be met simultaneously. In this scenario the `AND` operator specifies that the condition of the department being Marketing and the condition of the offices being located in the East buildings must both be met simultaneously.
+
+The `LIKE` filter is used to search for a pattern in a column. In this scenario the `LIKE` filter is searching for a pattern where employees machines from the Marketing department are specificaly located in offices located in the East buildings.
+
+Office's can be found in the office column. In this scenario there are numerous East office buildings. For example, East-170 and East-320.
+For this reason I used the `%` wildcard because I wanted to filter for any and every office that meets the other conditions and is located in the East buildings. 
+
+The image below highlights the equals `=` operator and `AND` operator in green, the `LIKE` filter paired with the `%` wildcard in pink, and the two columns displaying the SQL query as successful in blue.
+
+<img src="" width="600" /> 
 
 ### Retrieve employees in Finance or Sales
 My team then needed to perform a different security update on machines for employees in the Sales and Finance departments.
@@ -94,7 +101,7 @@ I used filters in SQL to create a query that identifies all employees in the Sal
 (The department of the employee is found in the department column, which contains values that include Sales and Finance.)
 Describe your query and how it works.
 
-
+<img src="" width="600" />
 
 ### Retrieve all employees not in IT
 My team needed to make one more update to employee machines. 
@@ -104,7 +111,7 @@ I use filters in SQL to create a query which identifies all employees not in the
 (The department of the employee is found in the department column, which contains values that include Information Technology.)
 Describe your query and how it works.
 
-
+<img src="" width="600" />
 
 ### Summary
 In the Summary section, provide a short summary of the previous tasks and connect them to the scenario. Write approximately two to four sentences.
