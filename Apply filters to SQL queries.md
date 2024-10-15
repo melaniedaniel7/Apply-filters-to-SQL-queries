@@ -92,7 +92,7 @@ For this reason I used the `%` wildcard because I wanted to filter for any and e
 
 The image below highlights the equals `=` operator and `AND` operator in green, the `LIKE` filter paired with the `%` wildcard in pink, and the two columns displaying the SQL query as successful in blue.
 
-<img src="" width="600" /> 
+<img src="https://github.com/melaniedaniel7/Apply-filters-to-SQL-queries/blob/fb774e711af057ba261b278979773adde9fbacc9/Screenshot%202024-10-15%20at%2011.48.25.png" width="600" /> 
 
 ### Retrieve employees in Finance or Sales
 My team then needed to perform a different security update on machines for employees in the Sales and Finance departments.
