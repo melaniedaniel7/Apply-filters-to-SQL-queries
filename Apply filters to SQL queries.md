@@ -5,14 +5,9 @@ Some activities and content within this project were provided by the course as p
 and Coursera, and I acknowledge their role in supporting the completion of this project.
 
 Be sure to include the following in your completed activity:
-- Screenshots of your queries or typed versions of the queries
-- Explanations of your queries
-- A project description at the beginning
-- A summary at the end
-- Details on using LIKE to search for a pattern
 - Details on filtering for dates and times
 - Details on using AND and OR to filter on multiple conditions
-- Details on using NOT in filters
+
 
 ### Project description
 
@@ -34,6 +29,8 @@ Finally, I used the `WHERE` filter to identify failed login attempts recorded af
 
 To review the `login_time` column for afterhours only, the greater than `>` operator is used followed by the time `18:00`. The greater than operator specifies that I am only interested in data after the specified time period.
 
+💡 Time is considered a distinct data type in SQL and is treated as a literal value, which means it needs to be enclosed in single quotes when queried.
+
 The `AND` operator is used becuase I have two conditions that I want met simultaneously.
 
 To identify failed login attempts I used the fact that MySQL utilizes Boolean data. This means that the Boolean value `1` represents `TRUE` and the Boolean value `0` represents `FALSE`. These can be used interchangeably. In the image below I specified the condition of failed login attempts using `success = FALSE` followed by a semiclon `;` to signify the end of the query. The equals `=` operator indicates that the login attempt must be unsuccessful.
@@ -51,7 +48,11 @@ I used the equals `=` operator and the `OR` operator in SQL to create a query th
 
 The image below shows how I used the `WHERE` filter to filter for the specific data I am looking for in the `log_in_attempts table`. 
 The date of the login attempt is found in the `login_date` column.
+
 The `OR` operator specifies that either condition can be met. I use this operator becuase I want data about login attempts that specifically occured on either `2022-05-08` or `2022-05-09`.
+
+💡 Dates are considered a distinct data type in SQL and are treated as literal values, which means they need to be enclosed in single quotes when queried.
+
 The equals `=` operator indicates that any data I am looking for in the database must have that exact date reflected in the `login_date` column. The equals operator is exclusive, which means that it does not indlude the value of comparison.
 
 💡 When using the `OR` operator the column being specified for each condition must be repeted in full. This is shown in the image below in pink.
@@ -62,7 +63,8 @@ The image below highlights the operators used in green and the result of either 
 
 ### Retrieve login attempts outside of Mexico
 There was suspicious activity with login attempts, but the team determined that this activity did not originate in Mexico. 
-Here I needed to investigate login attempts that occurred outside of Mexico. 
+Here I needed to investigate login attempts that occurred outside of Mexico.
+
 I used the `NOT` operator, and the `LIKE` filter paired with the `%` wildcard in SQL to create a query that identifies all login attempts that occurred outside of Mexico. 
 
 I used the `NOT` operator because the suspecious login activity happened in countries excluding Mexico. The `NOT` operator negates a condition.
@@ -115,9 +117,15 @@ The image below highlights the equals `=` operator and `OR` operator in green, a
 My team needed to make one more update to employee machines. 
 The employees who are in the Information Technology department already had this update, but employees in all other departments need it.
 
-I use filters in SQL to create a query which identifies all employees not in the IT department. 
-(The department of the employee is found in the department column, which contains values that include Information Technology.)
-Describe your query and how it works.
+I used the `NOT` operator and equals `=` operator in SQL to create a query which identifies all employees not in the IT department. 
+
+The department of the employee is found in the department column, which contains values that include Information Technology.
+
+The `NOT` operator negates a condition. I used the `NOT` operator because I wanted to filter for employee machines in every department excluding the Information Technology department.
+
+The equals `=` operator exclusively specifies that the department to filter for is Information Technology. This paired with the `NOT` operator creates a SQL query that exclusively filters for employee machines in all departments, excluding Information Technology.
+
+The image below highlights the `NOT` operator and the equals `=` operator in green, and the department column in blue.
 
 <img src="" width="600" />
 
