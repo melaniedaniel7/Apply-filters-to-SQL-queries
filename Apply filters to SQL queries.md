@@ -73,7 +73,7 @@ The `%` wildcard is used because Mexico can be referred to as both `MEX` and `ME
 
 The image below highlights the `NOT` operator in green, the `%` wildcard, and the `LIKE` filter in pink, and the results of countries where login attempts were made outside of Mexico in blue.
 
-<img src="" width="600" />
+<img src="https://github.com/melaniedaniel7/Apply-filters-to-SQL-queries/blob/1ab585636d4683dd378a997847713cee62150d7a/Screenshot%202024-10-15%20at%2010.28.41.png" width="600" />
 
 ### Retrieve employees in Marketing
 My team wanted to perform security updates on specific employee machines in the Marketing department. 
