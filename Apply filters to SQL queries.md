@@ -5,7 +5,6 @@ Some activities and content within this project were provided by the course as p
 and Coursera, and I acknowledge their role in supporting the completion of this project.
 
 ### Project description
-
 In this activity I acted as a security professional at a large organization. Part of my job was to investigate security issues to help keep the system secure. 
 In this scenario I recently discovered some potential security issues that involved login attempts and employee machines.
 My task was to examine the organization’s data in their employees and log_in_attempts tables. 
@@ -125,4 +124,4 @@ The image below highlights the `NOT` operator and the equals `=` operator in gre
 <img src="https://github.com/melaniedaniel7/Apply-filters-to-SQL-queries/blob/7cb8286cfa828875b6cbb97e584874ea1fd6320c/Screenshot%202024-10-15%20at%2012.53.19.png" width="600" />
 
 ### Summary
-In the Summary section, provide a short summary of the previous tasks and connect them to the scenario. Write approximately two to four sentences.
+I retrieved all failed login attempts after business hours using the `AND` operator. I retrieved all login attempts that occurred on specific dates using the `OR` operator. I retrieved logins that didn't originate in Mexico using the `NOT` operator. I retrieved information about certain employees in the Marketing department using the `AND` operator. I retrieved information about employees in the Finance or the Sales department using the `OR` operator. Finally, I obtained information about employees who are not in the Information Technology department using the `NOT` operator.
