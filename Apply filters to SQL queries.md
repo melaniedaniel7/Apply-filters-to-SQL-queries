@@ -4,11 +4,6 @@ Disclaimer: This project was created as part of my learning journey through the 
 Some activities and content within this project were provided by the course as part of my coursework. All credit for such content belongs to Google 
 and Coursera, and I acknowledge their role in supporting the completion of this project.
 
-Be sure to include the following in your completed activity:
-- Details on filtering for dates and times
-- Details on using AND and OR to filter on multiple conditions
-
-
 ### Project description
 
 In this activity I acted as a security professional at a large organization. Part of my job was to investigate security issues to help keep the system secure. 
@@ -127,7 +122,7 @@ The equals `=` operator exclusively specifies that the department to filter for 
 
 The image below highlights the `NOT` operator and the equals `=` operator in green, and the department column in blue.
 
-<img src="" width="600" />
+<img src="https://github.com/melaniedaniel7/Apply-filters-to-SQL-queries/blob/7cb8286cfa828875b6cbb97e584874ea1fd6320c/Screenshot%202024-10-15%20at%2012.53.19.png" width="600" />
 
 ### Summary
 In the Summary section, provide a short summary of the previous tasks and connect them to the scenario. Write approximately two to four sentences.
