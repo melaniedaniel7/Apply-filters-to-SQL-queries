@@ -63,12 +63,17 @@ The image below highlights the operators used in green and the result of either 
 ### Retrieve login attempts outside of Mexico
 There was suspicious activity with login attempts, but the team determined that this activity did not originate in Mexico. 
 Here I needed to investigate login attempts that occurred outside of Mexico. 
-I used filters in SQL to create a query that identifies all login attempts that occurred outside of Mexico. 
+I used the `NOT` operator, the `%` wildcard filter, and the `LIKE` filter in SQL to create a query that identifies all login attempts that occurred outside of Mexico. 
 
-(When referring to Mexico, the country column contains values of both MEX and MEXICO, and you need to use the LIKE keyword with % to make sure your query reflects this.)
-Describe your query and how it works.
+I used the `NOT` operator because the suspecious login activity happened in countries excluding Mexico. 
 
+The `LIKE` filter is used to search for a pattern in a column. In this scenario the `LIKE` filter is searching for a pattern where login attempts where made outside of Mexico.
 
+The `%` wildcard is used because Mexico can be referred to as both `MEX` and `MEXICO` in the country column. The `%` wildcard substitutes for any number of character. This ensures that our query will acurately filter for countries excluding Mexico, regardless of the two format opetions Mexico can be recorded as in the country column.
+
+The image below highlights the `NOT` operator in green, the `%` wildcard, and the `LIKE` filter in pink, and the results of countries where login attempts were made outside of Mexico in blue.
+
+<img src="" width="600" />
 
 ### Retrieve employees in Marketing
 My team wanted to perform security updates on specific employee machines in the Marketing department. 
