@@ -109,7 +109,7 @@ I used the `OR` operator becuase I wanted to filter for employee machines that c
 
 The image below highlights the equals `=` operator and `OR` operator in green, and the department column where our SQL query is focused on both Sales and Finance in blue.
 
-<img src="" width="600" />
+<img src="https://github.com/melaniedaniel7/Apply-filters-to-SQL-queries/blob/55069a1795bbb3aa8f8a156cba7c72cebec5e314/Screenshot%202024-10-15%20at%2012.21.31.png" width="600" />
 
 ### Retrieve all employees not in IT
 My team needed to make one more update to employee machines. 
