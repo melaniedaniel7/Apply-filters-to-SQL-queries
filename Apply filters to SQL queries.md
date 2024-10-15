@@ -65,7 +65,7 @@ There was suspicious activity with login attempts, but the team determined that 
 Here I needed to investigate login attempts that occurred outside of Mexico. 
 I used the `NOT` operator, and the `LIKE` filter paired with the `%` wildcard in SQL to create a query that identifies all login attempts that occurred outside of Mexico. 
 
-I used the `NOT` operator because the suspecious login activity happened in countries excluding Mexico. 
+I used the `NOT` operator because the suspecious login activity happened in countries excluding Mexico. The `NOT` operator negates a condition.
 
 The `LIKE` filter is used to search for a pattern in a column. In this scenario the `LIKE` filter is searching for a pattern where login attempts where made outside of Mexico.
 
@@ -97,9 +97,17 @@ The image below highlights the equals `=` operator and `AND` operator in green, 
 ### Retrieve employees in Finance or Sales
 My team then needed to perform a different security update on machines for employees in the Sales and Finance departments.
 
-I used filters in SQL to create a query that identifies all employees in the Sales or Finance departments. 
-(The department of the employee is found in the department column, which contains values that include Sales and Finance.)
-Describe your query and how it works.
+I used the equals `=` operator and the `OR` operator in SQL to create a query that identifies all employees in the Sales or Finance departments. 
+
+The department of the employee is found in the department column, which contains values that include Sales and Finance.
+
+I used the equals `=` operator to exclusively filter for employees found in the Sales or Finance department only.
+
+I used the `OR` operator becuase I wanted to filter for employee machines that could be found in either department. The `OR` operator specifies that either condition can be met. 
+
+💡 As mentioned previously: When using the `OR` operator, each condition must be specified in full speparately. This can be seen in pink in the image below where the two conditions both concern the department column. 
+
+The image below highlights the equals `=` operator and `OR` operator in green, and the department column where our SQL query is focused on both Sales and Finance in blue.
 
 <img src="" width="600" />
 
