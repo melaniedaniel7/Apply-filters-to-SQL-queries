@@ -19,7 +19,7 @@ I used the greater than operator `>`, the equals `=` operator and the `AND` oper
 
 In the image below I used the `SELECT *` query to select all columns in the database. 
 I then used the `FROM` query to filter data from the `log_in_attempts` table.
-Finally, I used the `WHERE` filter to identify failed login attempts recorded afterhours in the `login_time` column.
+Finally, I used the `WHERE` clause to filter for failed login attempts recorded afterhours in the `login_time` column.
 
 To review the `login_time` column for afterhours only, the greater than `>` operator is used followed by the time `18:00`. The greater than operator specifies that I am only interested in data after the specified time period.
 
@@ -40,7 +40,7 @@ A suspicious event occurred on 2022-05-09. To investigate this event, I reviewed
 
 I used the equals `=` operator and the `OR` operator in SQL to create a query that identifies all login attempts that occurred on 2022-05-09 or 2022-05-08.
 
-The image below shows how I used the `WHERE` filter to filter for the specific data I am looking for in the `log_in_attempts table`. 
+The image below shows how I used the `WHERE` clause to filter for the specific data I am looking for in the `log_in_attempts table`. 
 The date of the login attempt is found in the `login_date` column.
 
 The `OR` operator specifies that either condition can be met. I use this operator becuase I want data about login attempts that specifically occured on either `2022-05-08` or `2022-05-09`.
