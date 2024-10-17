@@ -5,7 +5,7 @@ Some activities and content within this project were provided by the course as p
 and Coursera, and I acknowledge their role in supporting the completion of this project.
 
 ### Project description
-In this activity I acted as a security professional at a large organization. Part of my job was to investigate security issues to help keep the system secure. 
+In this activity I acted as a security professional at a large organization. Part of my job was to investigate security issues to help keep the system secure and update employee computers as needed. 
 In this scenario I recently discovered some potential security issues that involved login attempts and employee machines.
 My task was to examine the organization’s data in their employees and log_in_attempts tables. 
 I used SQL filters to retrieve records from different datasets and investigate the potential security issues.
