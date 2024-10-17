@@ -27,7 +27,7 @@ To review the `login_time` column for afterhours only, the greater than `>` oper
 
 The `AND` operator is used becuase I have two conditions that I want met simultaneously.
 
-To identify failed login attempts I used the fact that MySQL utilizes Boolean data. This means that the Boolean value `1` represents `TRUE` and the Boolean value `0` represents `FALSE`. These can be used interchangeably. In the image below I specified the condition of failed login attempts using `success = FALSE` followed by a semiclon `;` to signify the end of the query. The equals `=` operator indicates that the login attempt must be unsuccessful.
+To identify failed login attempts I used the fact that MySQL utilizes Boolean data. This means that the Boolean value `1` represents `TRUE` and the Boolean value `0` represents `FALSE`. These can be used interchangeably. In the image below I specified the condition of failed login attempts using `success = FALSE` followed by a semiclon `;` to signify the end of the query. The equals `=` operator paired with `success` and `FALSE` indicates that the login attempt condition must return unsuccessful login attempt results.
 
 💡 Boolean values are not placed in single quotes because they are not string data, they are Boolean data.
 
